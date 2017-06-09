@@ -1,0 +1,16 @@
+
+{
+  "manifest_version": 2,
+  "name": "asset-proxy",
+  "version": "0.0.1",
+  "description": "Proxy asset request to cdn",
+
+  "background": {
+    "scripts": ["js/rule.js", "js/background.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
