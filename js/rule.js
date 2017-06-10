@@ -1,10 +1,10 @@
 // get from https://lug.ustc.edu.cn/wiki/mirrors/help/revproxy
-// will match by index
+
+// match rule:  reqHosts[i] --> cdnHosts[i]
 var reqHosts = [
   'registry-1.docker.io',
   'packages.elastic.co',
   'ppa.launchpad.net',
-  'archive.cloudera.com/cdh5/',
   'downloads.lede-project.org',
   'downloads.openwrt.org',
   'registry.npmjs.org',
@@ -20,7 +20,6 @@ var cdnHosts = [
   'docker.mirrors.ustc.edu.cn',
   'elastic.proxy.ustclug.org',
   'launchpad.proxy.ustclug.org',
-  'cloudera.proxy.ustclug.org/cdh5/',
   'lede.proxy.ustclug.org',
   'openwrt.proxy.ustclug.org',
   'npmreg.proxy.ustclug.org',
@@ -32,4 +31,14 @@ var cdnHosts = [
   'gravatar.proxy.ustclug.org'
 ];
 
-console.log('Host defined!')
+var regexRules = {
+  'archive.cloudera.com\/cdh5\/' : 'cloudera.proxy.ustclug.org'
+};
+// If you have a local asset cache server, feel free to add regex rule
+// eg:
+// {
+//   'http.*cdn.*'  : 'http://localhost:2048',
+//   'https.*cdn.*' : 'https://localhost:8080'
+// }
+
+console.log('Rules defined!')
