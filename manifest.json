@@ -2,7 +2,7 @@
 {
   "manifest_version": 2,
   "name": "asset-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Proxy asset request to cdn",
 
   "background": {
