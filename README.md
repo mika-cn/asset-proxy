@@ -1,3 +1,4 @@
+插件地址: [firefox](https://addons.mozilla.org/en-US/firefox/addon/asset-proxy/)
 
 该该浏览器插件把一些 google资源请求(js, css, webfont等)，重定向到中科大。以保证在没有开启 VPN 的情况下，一些没有被x的网站，能正常访问，比如 stackoverflow.com
 
